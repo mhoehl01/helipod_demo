@@ -6,3 +6,7 @@ provider "azurerm" {
   skip_provider_registration = true
   features {}
 }
+
+provider "aws" {
+  region = "eu-central-1"
+}
