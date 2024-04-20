@@ -7,6 +7,7 @@ module "az_base" {
 
 module "aws_base" {
   source   = "./modules/aws_base"
+  resource_group_name = "rg-helipodcore-demo-centraleu1"
   hub_cidr = "10.20.0.0/16"
 }
 
