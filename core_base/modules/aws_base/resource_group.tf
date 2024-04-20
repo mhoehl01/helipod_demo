@@ -1,4 +1,4 @@
-resource "aws_resourcegroups_group" "test" {
+resource "aws_resourcegroups_group" "core_rg" {
   name = var.resource_group_name
 
   resource_query {
