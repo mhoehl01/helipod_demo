@@ -4,6 +4,9 @@ resource "aws_resourcegroups_group" "core_rg" {
   resource_query {
     query = <<JSON
 {
+  "ResourceTypeFilters": [
+    "AWS::AllSupported"
+  ],
   "TagFilters": [
     {
       "Key": "workload",
