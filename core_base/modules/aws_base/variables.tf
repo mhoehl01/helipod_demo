@@ -1,4 +1,4 @@
-variable hub_cidr {
+variable "hub_cidr" {
   type        = string
   description = "Cidr of the hub vpc"
 }

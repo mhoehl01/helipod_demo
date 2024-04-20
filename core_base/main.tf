@@ -5,7 +5,7 @@ module "az_base" {
 }
 
 module "aws_base" {
-  source = "./modules/aws_base"
+  source   = "./modules/aws_base"
   hub_cidr = "10.20.0.0/16"
 }
 
