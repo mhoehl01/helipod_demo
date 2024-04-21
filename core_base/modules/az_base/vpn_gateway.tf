@@ -10,7 +10,7 @@ resource "azurerm_subnet" "core_gw_subnet" {
   name                 = "GatewaySubnet"
   resource_group_name  = azurerm_resource_group.core_rg.name
   virtual_network_name = azurerm_virtual_network.core_hub.name
-  address_prefixes     = ["10.10.0.0/26"]
+  address_prefixes     = ["${var.gatewaysubnet_address_prefix}"]
 }
 
 resource "azurerm_virtual_network_gateway" "core_gw" {
