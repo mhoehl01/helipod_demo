@@ -8,3 +8,14 @@ variable "resource_group_name" {
   description = "Name of the base resourcegroup"
 }
 
+variable defaultsubnet_cidr {
+  type        = string
+  description = "description"
+}
+
+variable gatewaysubnet_cidr {
+  type        = string
+  description = "Cidr for the gateway subnet"
+}
+
+
