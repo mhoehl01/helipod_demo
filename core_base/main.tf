@@ -18,6 +18,7 @@ module "aws_base" {
 module "hyperscaler_peering" {
   source = "./modules/hyperscaler_peering"
   az_pubip            = module.az_base.core_gw_pubip
+  aws_gateway_id = module.aws_base.gateway_id
 }
 
 
