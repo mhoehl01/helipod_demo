@@ -8,17 +8,17 @@ variable "resource_group_name" {
   description = "Name of the base resourcegroup"
 }
 
-variable defaultsubnet_cidr {
+variable "defaultsubnet_cidr" {
   type        = string
   description = "description"
 }
 
-variable gatewaysubnet_cidr {
+variable "gatewaysubnet_cidr" {
   type        = string
   description = "Cidr for the gateway subnet"
 }
 
-variable az_pubip {
+variable "az_pubip" {
   type        = string
   description = "description"
 }

@@ -13,6 +13,6 @@ module "aws_base" {
   hub_cidr            = "10.20.0.0/16"
   defaultsubnet_cidr  = "10.20.0.160/28"
   gatewaysubnet_cidr  = "10.20.0.0/26"
-  az_pubip = module.az_base.core_gw_pubip
+  az_pubip            = module.az_base.core_gw_pubip
 }
 

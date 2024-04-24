@@ -4,7 +4,7 @@ resource "aws_customer_gateway" "az_gateway_object" {
   type       = "ipsec.1"
 
   tags = {
-    Name = "azgw-hub-demo-centraleu1"
+    Name     = "azgw-hub-demo-centraleu1"
     workload = "hub"
   }
 }
