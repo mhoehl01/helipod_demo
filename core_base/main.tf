@@ -13,6 +13,11 @@ module "aws_base" {
   hub_cidr            = "10.20.0.0/16"
   defaultsubnet_cidr  = "10.20.0.160/28"
   gatewaysubnet_cidr  = "10.20.0.0/26"
+}
+
+module "hyperscaler_peering" {
+  source = "./modules/hyperscaler_peering"
   az_pubip            = module.az_base.core_gw_pubip
 }
+
 

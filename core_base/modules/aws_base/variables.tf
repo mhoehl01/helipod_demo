@@ -18,10 +18,5 @@ variable "gatewaysubnet_cidr" {
   description = "Cidr for the gateway subnet"
 }
 
-variable "az_pubip" {
-  type        = string
-  description = "description"
-}
-
 
 
