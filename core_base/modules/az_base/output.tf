@@ -21,4 +21,10 @@ output "gateway_id" {
   description = "Id of the azure vpn gateway"
 }
 
+output "hub_address_space" {
+  value       = azurerm_virtual_network.core_hub.address_space
+  description = "Address space of the hub"
+}
+
+
 

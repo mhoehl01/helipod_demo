@@ -17,6 +17,10 @@ variable "az_gateway_id" {
   description = "Id of az gateway"
 }
 
+variable "az_hub_address_space" {
+  type        = string
+  description = "Address space of the az hub"
+}
 
 variable "aws_gateway_id" {
   type        = string

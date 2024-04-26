@@ -20,3 +20,8 @@ resource "aws_vpn_connection" "aws_connection" {
     workload = "hub"
   }
 }
+
+resource "aws_vpn_connection_route" "azure" {
+  destination_cidr_block = var.az_hub_address_space
+  vpn_connection_id      = aws_vpn_connection.aws_connection.id
+}
