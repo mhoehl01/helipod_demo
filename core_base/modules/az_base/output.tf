@@ -22,7 +22,7 @@ output "gateway_id" {
 }
 
 output "hub_address_space" {
-  value       = azurerm_virtual_network.core_hub.address_space
+  value       = azurerm_virtual_network.core_hub.address_space[0]
   description = "Address space of the hub"
 }
 
