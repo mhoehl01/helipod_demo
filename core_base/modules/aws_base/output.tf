@@ -8,3 +8,9 @@ output "hub_cidr" {
   description = "Cidr of the hub vpc"
 }
 
+output "hub_rt_id" {
+  value       = aws_vpc.core_hub.main_route_table_id
+  description = "Id of the main routetable for hub vpc"
+}
+
+

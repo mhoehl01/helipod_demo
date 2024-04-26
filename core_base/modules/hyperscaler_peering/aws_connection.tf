@@ -25,3 +25,9 @@ resource "aws_vpn_connection_route" "azure" {
   destination_cidr_block = var.az_hub_address_space
   vpn_connection_id      = aws_vpn_connection.aws_connection.id
 }
+
+resource "aws_route" "azure" {
+  route_table_id         = var.aws_hub_rt_id
+  destination_cidr_block = var.az_hub_address_space
+  gateway_id             = var.aws_gateway_id
+}

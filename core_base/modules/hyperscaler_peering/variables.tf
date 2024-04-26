@@ -32,4 +32,10 @@ variable "aws_hub_cidr" {
   description = "Cidr of aws hub"
 }
 
+variable "aws_hub_rt_id" {
+  type        = string
+  description = "Id of aws hub main route table"
+}
+
+
 

@@ -22,6 +22,7 @@ module "hyperscaler_peering" {
   az_hub_address_space   = module.az_base.hub_address_space
   aws_gateway_id         = module.aws_base.gateway_id
   aws_hub_cidr           = module.aws_base.hub_cidr
+  aws_hub_rt_id          = module.aws_base.hub_rt_id
 }
 
 
