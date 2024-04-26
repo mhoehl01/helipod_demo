@@ -1,3 +1,7 @@
+variable "az_region" {
+  type = string
+}
+
 variable "az_pubip" {
   type        = string
   description = "Public IP of azure gateway"

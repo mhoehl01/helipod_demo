@@ -1,3 +1,7 @@
+variable "az_region" {
+  type = string
+}
+
 variable "hub_address_space" {
   type        = string
   description = "Address space for hub vnet"

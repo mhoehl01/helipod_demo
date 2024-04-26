@@ -23,3 +23,13 @@ variable "access_key" {
 variable "secret_key" {
   type = string
 }
+
+variable "aws_region" {
+  type    = string
+  default = "eu-central-1"
+}
+
+variable "az_region" {
+  type    = string
+  default = "West Europe"
+}

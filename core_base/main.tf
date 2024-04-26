@@ -1,5 +1,6 @@
 module "az_base" {
   source                       = "./modules/az_base"
+  az_region                    = var.az_region
   hub_address_space            = "10.10.0.0/16"
   defaultsubnet_address_prefix = "10.10.0.160/28"
   gatewaysubnet_address_prefix = "10.10.0.0/26"
@@ -14,6 +15,7 @@ module "aws_base" {
 
 module "hyperscaler_peering" {
   source                 = "./modules/hyperscaler_peering"
+  az_region              = var.az_region
   az_pubip               = module.az_base.core_gw_pubip
   aws_gateway_id         = module.aws_base.gateway_id
   az_resource_group_name = module.az_base.resource_group_name
