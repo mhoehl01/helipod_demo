@@ -16,6 +16,7 @@ resource "azurerm_virtual_network_gateway_connection" "az_connection" {
   local_network_gateway_id   = azurerm_local_network_gateway.core_lgw.id
 
   shared_key = aws_vpn_connection.aws_connection.tunnel1_preshared_key
+  connection_protocol = "IKEv2"
 }
 
 
