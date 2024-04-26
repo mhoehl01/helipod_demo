@@ -16,3 +16,9 @@ output "resource_group_name" {
   description = "Name of the resourcegroup"
 }
 
+output "gateway_id" {
+  value       = azurerm_virtual_network_gateway.core_gw.id
+  description = "Id of the azure vpn gateway"
+}
+
+

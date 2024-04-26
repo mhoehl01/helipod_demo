@@ -17,8 +17,9 @@ module "hyperscaler_peering" {
   source                 = "./modules/hyperscaler_peering"
   az_region              = var.az_region
   az_pubip               = module.az_base.core_gw_pubip
-  aws_gateway_id         = module.aws_base.gateway_id
   az_resource_group_name = module.az_base.resource_group_name
+  az_gateway_id          = module.az_base.gateway_id
+  aws_gateway_id         = module.aws_base.gateway_id
   aws_hub_cidr           = module.aws_base.hub_cidr
 }
 
