@@ -7,3 +7,15 @@ variable "aws_gateway_id" {
   type        = string
   description = "Id of aws gateway"
 }
+
+variable "az_resource_group_name" {
+  type        = string
+  description = "description"
+}
+
+variable "aws_hub_cidr" {
+  type        = string
+  description = "Cidr of aws hub"
+}
+
+

@@ -3,11 +3,6 @@ variable "hub_cidr" {
   description = "Cidr of the hub vpc"
 }
 
-variable "resource_group_name" {
-  type        = string
-  description = "Name of the base resourcegroup"
-}
-
 variable "defaultsubnet_cidr" {
   type        = string
   description = "description"

@@ -1,5 +1,5 @@
 resource "aws_resourcegroups_group" "core_rg" {
-  name = var.resource_group_name
+  name = "rg-helipodcore-demo-centraleu1"
 
   resource_query {
     query = <<JSON

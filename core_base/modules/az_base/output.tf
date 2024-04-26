@@ -10,3 +10,9 @@ output "core_gw_pubip" {
   value       = data.azurerm_public_ip.data_core_gw_pubip.ip_address
   description = "Public ip of the azure vpn gateway"
 }
+
+output "resource_group_name" {
+  value       = azurerm_resource_group.core_rg.name
+  description = "Name of the resourcegroup"
+}
+
